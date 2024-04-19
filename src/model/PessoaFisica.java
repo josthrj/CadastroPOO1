@@ -5,13 +5,13 @@ public class PessoaFisica extends Pessoa {
     private String cpf;
     private int idade;
 
-    // Construtores
+    // Constructor
     public PessoaFisica() {
-        super(); // Chama o construtor padrão da superclasse Pessoa
+        super(); // Llama al constructor padrão de la superclase Pessoa
     }
 
     public PessoaFisica(int id, String nome, String cpf, int idade) {
-        super(id, nome); // Chama o construtor completo da superclasse Pessoa
+        super(id, nome); // Llama al constructor completo de la superclase Pessoa
         this.cpf = cpf;
         this.idade = idade;
     }
@@ -19,12 +19,12 @@ public class PessoaFisica extends Pessoa {
     // Método exibir polimórfico
     @Override
     public void exibir() {
-        super.exibir(); // Chama o método exibir da superclasse Pessoa
+        super.exibir(); // Llama al método exibir de la superclase Pessoa
         System.out.println("CPF: " + cpf);
         System.out.println("Idade: " + idade);
     }
 
-    // Getters e setters para os campos adicionais
+    // Getters y setters para los campos adicionales
     public String getCpf() {
         return cpf;
     }
@@ -39,5 +39,14 @@ public class PessoaFisica extends Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    // Método main para probar la clase
+    public static void main(String[] args) {
+        // Crear una instancia de PessoaFisica
+        PessoaFisica pessoaFisica = new PessoaFisica(1, "João", "12345678900", 30);
+
+        // Llamar al método exibir para mostrar los datos
+        pessoaFisica.exibir();
     }
 }

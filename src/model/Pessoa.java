@@ -5,11 +5,20 @@ public class Pessoa {
     private int id;
     private String nome;
 
-    // Construtor padrão
+    // Método main para probar la clase
+    public static void main(String[] args) {
+        // Crear una instancia de Pessoa
+        Pessoa pessoa = new Pessoa(1, "Juan");
+
+        // Llamar al método exibir para mostrar los datos
+        pessoa.exibir();
+    }
+
+    // Constructor padrão
     public Pessoa() {
     }
 
-    // Construtor completo
+    // Constructor completo
     public Pessoa(int id, String nome) {
         this.id = id;
         this.nome = nome;
@@ -38,4 +47,3 @@ public class Pessoa {
         this.nome = nome;
     }
 }
-
