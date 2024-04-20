@@ -1,6 +1,8 @@
 package model;
 
-public class Pessoa {
+import java.io.Serializable;
+
+public class Pessoa implements Serializable {
     // Campos
     private int id;
     private String nome;
@@ -8,7 +10,7 @@ public class Pessoa {
     // Método main para probar la clase
     public static void main(String[] args) {
         // Crear una instancia de Pessoa
-        Pessoa pessoa = new Pessoa(1, "Juan");
+        Pessoa pessoa = new Pessoa(1, "Joao");
 
         // Llamar al método exibir para mostrar los datos
         pessoa.exibir();

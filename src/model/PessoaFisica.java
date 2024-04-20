@@ -1,6 +1,8 @@
 package model;
 
-public class PessoaFisica extends Pessoa {
+import java.io.Serializable;
+
+public class PessoaFisica extends Pessoa implements Serializable {
     // Campos adicionais
     private String cpf;
     private int idade;
@@ -39,14 +41,5 @@ public class PessoaFisica extends Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    // Método main para probar la clase
-    public static void main(String[] args) {
-        // Crear una instancia de PessoaFisica
-        PessoaFisica pessoaFisica = new PessoaFisica(1, "João", "12345678900", 30);
-
-        // Llamar al método exibir para mostrar los datos
-        pessoaFisica.exibir();
     }
 }

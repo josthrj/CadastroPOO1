@@ -1,7 +1,9 @@
 package model;
 
+import java.io.Serializable;
+
 // Definição da classe PessoaJuridica, herdando de Pessoa
-public class PessoaJuridica extends Pessoa {
+public class PessoaJuridica extends Pessoa implements Serializable {
     private String cnpj;
 
     public PessoaJuridica(int id, String nome, String cnpj) {
@@ -12,10 +14,9 @@ public class PessoaJuridica extends Pessoa {
     @Override
     public void exibir() {
         super.exibir();
-        System.out.println(
-     
-"CNPJ: " + cnpj);
+        System.out.println("CNPJ: " + cnpj);
     }
 }
+
 
 
