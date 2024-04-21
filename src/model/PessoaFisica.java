@@ -1,8 +1,8 @@
 package model;
 
-import java.io.Serializable;
+import java.util.ArrayList;
 
-public class PessoaFisica extends Pessoa implements Serializable {
+public class PessoaFisica extends Pessoa {
     // Campos adicionais
     private String cpf;
     private int idade;
@@ -41,5 +41,48 @@ public class PessoaFisica extends Pessoa implements Serializable {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    // Clase PessoaFisicaRepo para gerenciar as entidades PessoaFisica
+    public static class PessoaFisicaRepo {
+        private ArrayList<PessoaFisica> pessoas = new ArrayList<>();
+
+        // Método para inserir uma PessoaFisica
+        public void inserir(PessoaFisica pessoa) {
+            pessoas.add(pessoa);
+        }
+
+        // Método para alterar uma PessoaFisica existente
+        public void alterar(int index, PessoaFisica pessoa) {
+            if (index >= 0 && index < pessoas.size()) {
+                pessoas.set(index, pessoa);
+            } else {
+                System.out.println("Índice inválido.");
+            }
+        }
+
+        // Método para excluir uma PessoaFisica existente
+        public void excluir(int index) {
+            if (index >= 0 && index < pessoas.size()) {
+                pessoas.remove(index);
+            } else {
+                System.out.println("Índice inválido.");
+            }
+        }
+
+        // Método para obter uma PessoaFisica pelo índice
+        public PessoaFisica obter(int index) {
+            if (index >= 0 && index < pessoas.size()) {
+                return pessoas.get(index);
+            } else {
+                System.out.println("Índice inválido.");
+                return null;
+            }
+        }
+
+        // Método para obter todas as PessoasFisicas
+        public ArrayList<PessoaFisica> obterTodos() {
+            return pessoas;
+        }
     }
 }
