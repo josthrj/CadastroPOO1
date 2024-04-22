@@ -26,13 +26,13 @@ public class Pessoa implements Serializable {
         this.nome = nome;
     }
 
-    // Método para exibir os dados
+    // Método para exibir los datos
     public void exibir() {
         System.out.println("ID: " + id);
-        System.out.println("Nome: " + nome);
+        System.out.println("Nombre: " + nome);
     }
 
-    // Getters e setters
+    // Getters y setters
     public int getId() {
         return id;
     }

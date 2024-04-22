@@ -84,5 +84,15 @@ public class PessoaFisica extends Pessoa {
         public ArrayList<PessoaFisica> obterTodos() {
             return pessoas;
         }
+
+        public void persistir(String arquivoPessoaFisica) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'persistir'");
+        }
+
+        public void recuperar(String arquivoPessoaFisica) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'recuperar'");
+        }
     }
 }
