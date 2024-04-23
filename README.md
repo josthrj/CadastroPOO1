@@ -21,3 +21,6 @@ Contribuições para o projeto são bem-vindas. Se você encontrar algum problem
 
 Para entrar em contato com a equipe de desenvolvimento, você pode enviar um email para 
 (josthoonrivas@gmail.com).
+
+## Os relatorios do projeto se encontram no siguinte link
+https://drive.google.com/file/d/1JPNKZijIoGUNs8xap3RYT562WIjomjzh/view?usp=drive_link
